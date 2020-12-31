@@ -1,24 +1,30 @@
 {
-    "name": "foostart/package-pexcel",
-    "description": "Create overview pexcel can intergrate other project",
+    "name": "phamvanhieu/package-pexcel",
+    "type": "library",
+    "description": "package-pexcel",
     "keywords": [
-        "foostart",
-        "laravel 5 package pexcel"
+        "log","logging"
     ],
     "authors": [
         {
-            "name": "FooStart",
-            "email": "foostart.com@gmail.com",
-            "homepage": "http://foostart.com"
+            "name": "phamvanhieu",
+            "email": "vanhieup1998@gmail.com"
         }
     ],
-    "license": "MIT",
-    "require": {
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
     },
-    "autoload": {
-        "psr-4": {
-            "Foostart\\Pexcel\\": "/"
+    "extra": {
+        "laravel": {
+            "dont-discover": []
         }
     },
-    "minimum-stability": "dev"
+    "require": {
+        "php": "^7.3|^8.0",
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
 }
